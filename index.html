@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yep ] $() Select by Element, ID AND Class 
+[3/3  ] Use Three Different jQuery Methods 
+[ yes ] Add Five CSS Declarations
+[ 3/3 ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -21,49 +21,58 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
+    <button id="mem1-button" class="memory-button">Memory #1</button>
+    <button id="mem2-button" class="memory-button">Memory #2</button>
+    <button id="mem3-button" class="memory-button">Memory #3</button>
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
         <h3 id="mem1">Urinetown Bows</h3>
-        <p>More about this memory.</p>
+        <img id="mem1-img" src="Urinetown.jpg" alt="Urinetown performance photo" />
+        <div id="mem1-text">
+          <p>Urinetown was my favorite Laguardia experience. Having the opportunity to work on a project where I got to share the silliest parts of myself was one that I feel so lucky to have gotten. The moment I felt it most was during the bows of closing night. As soon as we held our hands up and ran out of breath holding the last note of the show, it struck me that we had truly reached the end. The audience stood up and clapped and clapped and clapped and kept clapping. I ran to the backstage, peeking over the window to wait for the moment when I would run out and bow. As soon as Hope and Bobby finished their adorable bow and dance, there was a moment where the whole room was still, they were waiting for me to run out. And run out I did. Eyes still wet from Charlotte's gripping rendition of I See a River and tattered bear in hand, I ran to the center of the stage and grinned widely in a moment of true joy, a genuine feeling of pride rushing over me. As I bowed, I took in the applause and the moment in which I was officially done with my Senior SDF, the capstone project of my four years at the school that brought out the best and the most authentic parts of myself, and I couldn't help but feel overwhelmingly happy and greatful and whole. After that, the entire cast came out to bow with me and Liam and in those couple of seconds I couldn't help but tear up. This show will always be a part of me. These people have changed me and I've grown with them throughout these four years and I am so proud of all of the work that they put into this show. Into this urinetown family. The bows were just one moment of this show, but the bows offered the moment when I was no longer Little Sally on stage, but myself. A moment where I was able to be Lily receiving all of that applause and be on stage with my friends doing the thing that we all love so deeply. I hope I never forget that feeling. </p>
+        </div>
       </li>
 
       <li>
         <h3 id="mem2">Turkiye</h3>
-        <p>This summer, by best friend brought me to her families house in Turkiye. Every day we went on a different adventure. One day we explored the ruins in Ephesus and drank so much gatorade that we felt sick. Most days we would swim around in the ocean and play mermaids with her little brother. There was this one large rock in the water near her house where we would jump off and fly for a minute before crashing down into the ocean. There were tons of rocks down below and it was kind of terrifying and we both knew it could have ended in disaster but it was unbelievably fun. The nights there lasted forever and there was this one night when we went to this beach club and the DJ was incredible and the lights were blinding and we danced until we passed out in the sand and stared up into the sky until the uber came. One night we came down to the dock at three in the morning in our pjs and we left our stuff on beach chairs and jumped into the freezing water. After that we dried off in our towels and watched Superstore on the sand until we fell asleep. It was awesome. Also the food was incredible. If you haven't had Monteh you haven't lived.  </p>
+        <img id="mem2-img" src="Turkiye.jpg" alt="Turkiye adventure photo" />
+        <div id="mem2-text">
+          <p>This summer, by best friend brought me to her families house in Turkiye. Every day we went on a different adventure. One day we explored the ruins in Ephesus and drank so much gatorade that we felt sick. Most days we would swim around in the ocean and play mermaids with her little brother. There was this one large rock in the water near her house where we would jump off and fly for a minute before crashing down into the ocean. There were tons of rocks down below and it was kind of terrifying and we both knew it could have ended in disaster but it was unbelievably fun. The nights there lasted forever and there was this one night when we went to this beach club and the DJ was incredible and the lights were blinding and we danced until we passed out in the sand and stared up into the sky until the uber came. One night we came down to the dock at three in the morning in our pjs and we left our stuff on beach chairs and jumped into the freezing water. After that we dried off in our towels and watched Superstore on the sand until we fell asleep. It was awesome. Also the food was incredible. If you haven't had Monteh you haven't lived.  </p>
+        </div>
       </li>
 
       <li>
         <h3 id="mem3">Safari</h3>
-        <p>Earlier in the summer I went on safari in Tanzania with a bunch of my friends. We had this jeep with an open roof and we would climb up to the top with our binoculars and cameras and we'd bask in the sun with the warm dusty air blowing on the back of our necks. At night, we'd settle in these tents and fall asleep to the cries of coyotes and the calls of songbirds in the trees above. My friend Amaya and I would sneak out to look at the stars from this hill that was very close. It was so crazy to be so close to elephants and giraffes and lions and zebras without them being behind bars. I loved it. </p>
+        <img id="mem3-img" src="Tanzania.jpg" alt="Safari adventure photo" />
+        <div id="mem3-text">
+          <p>Earlier in the summer I went on safari in Tanzania with a bunch of my friends. We had this jeep with an open roof and we would climb up to the top with our binoculars and cameras and we'd bask in the sun with the warm dusty air blowing on the back of our necks. At night, we'd settle in these tents and fall asleep to the cries of coyotes and the calls of songbirds in the trees above. My friend Amaya and I would sneak out to look at the stars from this hill that was very close. It was so crazy to be so close to elephants and giraffes and lions and zebras without them being behind bars. I loved it. </p>
+        </div>
       </li>
     </ol>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-
-      // ======================== Button #1
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      $(document).ready(function() {
+        $('button').click(function() { 
+          var imgId = '#' + $(this).attr('id').replace('-button', '-img');
+          var textId = '#' + $(this).attr('id').replace('-button', '-text');
+          if ($(imgId).is(':visible')) {
+            $(imgId).hide();
+            $(textId).hide();
+          } else {
+            $(imgId).show();
+            $(textId).show();
+          }
+        });
+        $('.memory-button').hover(function() {  
+          $(this).addClass('highlight');  
+        }, function() {
+          $(this).removeClass('highlight'); 
+        });
       });
-
-      // ======================== Button #2
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
-
-      // ======================== Button #3
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Safari");
-      });
-
-
     </script>
   </body>
 </html>
 
-<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
+
