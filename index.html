@@ -1,9 +1,9 @@
 <!-- Unit 11 Project
 Requirements
-[ yep ] $() Select by Element, ID AND Class 
-[3/3  ] Use Three Different jQuery Methods 
-[ yes ] Add Five CSS Declarations
-[ 3/3 ] Include Three Images
+[ ] $() Select by Element, ID AND Class 
+[1/3  ] Use Three Different jQuery Methods 
+[  ] Add Five CSS Declarations
+[ 3/3] Include Three Images
 
 Select ONE Additional 
 [ yes ] Feature 1 - Use .hide() & .show() method
@@ -53,24 +53,31 @@ Select ONE Additional
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+      $("#mem1-img").hide();
+      $("#mem2-img").hide();
+      $("#mem3-img").hide();
       $(document).ready(function() {
-        $('button').click(function() { 
-          var imgId = '#' + $(this).attr('id').replace('-button', '-img');
-          var textId = '#' + $(this).attr('id').replace('-button', '-text');
-          if ($(imgId).is(':visible')) {
-            $(imgId).hide();
-            $(textId).hide();
-          } else {
-            $(imgId).show();
-            $(textId).show();
-          }
+        // Hide all memory texts initially
+        $('#mem1-text, #mem2-text, #mem3-text').hide();
+
+        // button 1
+        $("#mem1-button").click(function() {
+          $('#mem1-text').toggle();
+          $("#mem1-img").show(2000);
         });
-        $('.memory-button').hover(function() {  
-          $(this).addClass('highlight');  
-        }, function() {
-          $(this).removeClass('highlight'); 
+
+        // buttoon 2
+        $('#mem2-button').click(function() {
+          $('#mem2-text').toggle();
+          $("#mem2-img").show(2000);
+        });
+      
+        // button 3
+        $('#mem3-button').click(function() {
+          $('#mem3-text').toggle();
         });
       });
+
     </script>
   </body>
 </html>
