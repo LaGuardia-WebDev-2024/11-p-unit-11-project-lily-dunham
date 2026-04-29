@@ -57,7 +57,7 @@ Select ONE Additional
       $("#mem2-img").hide();
       $("#mem3-img").hide();
       $(document).ready(function() {
-        // Hide all memory texts initially
+    
         $('#mem1-text, #mem2-text, #mem3-text').hide();
 
         // button 1
@@ -65,9 +65,10 @@ Select ONE Additional
           $('#mem1-text').toggle();
           $("#mem1-img").show(2000);
           $("html").css("background-color", "lightblue");
+          $(".mem1-button").text("pee!")
         });
 
-        // buttoon 2
+        // button 2
         $('#mem2-button').click(function() {
           $('#mem2-text').toggle();
           $("#mem2-img").show(2000);
